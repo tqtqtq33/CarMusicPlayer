@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarMusic</string>
+    <string name="no_music_found">找不到音樂檔案</string>
+    <string name="lyrics_loading">歌詞載入中…</string>
+    <string name="lyrics_not_found">找不到歌詞</string>
+    <string name="channel_name">音樂播放</string>
+</resources>

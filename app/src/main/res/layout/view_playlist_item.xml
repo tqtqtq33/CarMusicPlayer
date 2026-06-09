@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="8dp">
+
+    <!-- 專輯封面 -->
+    <ImageView
+        android:id="@+id/ivAlbumArt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_album_art"
+        android:clipToOutline="true"
+        android:contentDescription="封面"/>
+
+    <!-- 歌曲標題（覆蓋在圖片下方） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#CC000000"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:textColor="@color/text_primary"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <!-- 播放指示器 -->
+    <ImageView
+        android:id="@+id/ivPlayIndicator"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play"
+        android:visibility="gone"
+        android:contentDescription="播放指示"/>
+
+</FrameLayout>
